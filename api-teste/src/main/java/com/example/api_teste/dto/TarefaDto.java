@@ -14,6 +14,7 @@ public record TarefaDto(
         regexp = "^\\d{2}/\\d{2}/\\d{4}$",
         message = "deve seguir o formato dd/mm/aaaa"
     )
+    @NotBlank
     String diaConclusao
 ) {
     
